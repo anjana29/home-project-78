@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>home-project-78</title>
+    </head>
+    <body>
+        <h4 id="family_member_name"></h4>
+        <img src="" >
+        <img src="https://www.vhv.rs/dpng/d/556-5560691_collection-of-free-vector-family-cartoon-family-of.png"
+        style="width: 30%"; id="family_member_image" >
+        <button onclick="update();">Next</button>
+        <script>
+var images=["https://i.pinimg.com/474x/c7/1f/b7/c71fb749653a6d37f0917090c696c0eb.jpg","https://img.lovepik.com/element/40107/2623.png_860.png","https://media.istockphoto.com/vectors/granddaughter-walking-with-her-grandfather-vector-id1159970878?k=6&m=1159970878&s=612x612&w=0&h=dTH88os7JnHm5qeIMMnbWZqJMWaUYHs-UZHSh9qrxPQ=","https://image.shutterstock.com/image-vector/cartoon-grandmother-glasses-old-lady-260nw-1470863963.jpg","https://w7.pngwing.com/pngs/728/358/png-transparent-girl-cartoon-glasses-drawing-girl-cartoon-child-black-hair-fashion.png"];
+var names=["Mother-Meena kumari","father-Sankar","grandpa-Murugan","grandma-Dhanalakshmi","me-Anjana pragati"];
+var i=0;
+function update()
+{
+    i++
+    var numbers_of_family_member_in_array=5
+    if(i>numbers_of_family_member_in_array)
+    {
+        i=0;
+    }
+    var updatedImage=images[i];
+    var updatedName=names[i];
+    document.getElementById("family_member_image").src=updatedImage;
+    document.getElementById("family_member_name").innerHTML=updatedName;
+}
+
+</script>
+    </body>
+</html>
